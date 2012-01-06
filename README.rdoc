@@ -1,6 +1,16 @@
 = bio-plasmoap
 
-Description goes here.
+PlasmoAP is a program for predicting apicoplast targetting sequences
+in Plasmodium falciparum (the most fatal causative agent of malaria).
+This algorithm was designed based on what was outlined in the 
+PlasmoAP journal article:
+
+Dissecting apicoplast targeting in the malaria parasite Plasmodium falciparum.
+Foth BJ, Ralph SA, Tonkin CJ, Struck NS, Fraunholz M, Roos DS, Cowman AF, McFadden GI.
+Science. 2003 Jan 31;299(5607):705-8.
+PMID: 12560551
+
+PlasmoAP requires the bio-signalp BioRuby plugin to be installed, which currently requires some manual intervention to install (more than just installing the bio-signalp BioRuby plugin). See http://github.com/wwood/bio-signalp for more details.
 
 == Contributing to bio-plasmoap
  
