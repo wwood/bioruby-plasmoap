@@ -1,4 +1,7 @@
+#!/usr/bin/env ruby
 
+require 'rubygems'
+require 'bio'
 require 'bio-plasmoap'
 
 if $0 == __FILE__
