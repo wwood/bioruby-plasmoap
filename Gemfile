@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem 'bio', '>=1.4.1'
 gem 'bio-signalp', '>=0.2.0'
 
 # Add dependencies to develop your gem here.
