@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# coding: utf-8
 
 require 'bio'
 require 'bio-signalp'
@@ -23,6 +24,10 @@ module Bio
       if has_signal_sequence.nil?
         # to_s means the sequence can be amino acid string or proper Bio::Sequence::AA object
         signalp = Bio::SignalP::Wrapper.new.calculate(sequence.to_s)
+        unless signalp.kind_of?(Bio::SignalP::Version3::Result)
+          raise "PlasmoAP uses signalp version 3, but different version (#{signalp.class}) was found"
+        end
+        
         has_signal_sequence = signalp.classical_signal_sequence?
         
         signalp_cleaved_sequence = signalp.cleave(sequence)
