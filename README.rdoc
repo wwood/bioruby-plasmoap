@@ -13,6 +13,14 @@ PlasmoAP requires the bio-signalp BioRuby plugin to be installed and therefore S
 
 Specifically, it requires version 3 of SignalP.
 
+== Installation and usage
+To install:
+    gem install bio-plasmoap
+
+To use:
+    plasmoap.rb /path/to/proteins.fasta
+    
+
 == Copyright
 
 Copyright (c) 2012-2016 Ben J Woodcroft. See LICENSE.txt for
